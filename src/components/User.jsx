@@ -15,14 +15,14 @@ export default class User extends Component {
     let template
 
     if (name) {
-      template = <div><p>Привет, {name}!</p><button className='btn btn-exit' onClick={this.props.handleLogin}>Выйти</button></div>
+      template = <div><span className='label label-success'>Привет, {name}!</span><button className='btn btn-exit' onClick={this.props.handleLogin}>Выйти</button></div>
     } else {
 
       template = <button className='btn' onClick={this.props.handleLogin}>Войти</button>
     }
     return <div className='ib user'>
       {template}
-      {error ? <p className='error'> {error}. <br /> Попробуйте еще раз.</p> : ''}
+      {error ? <span className='label label-danger'>{error}</span> : ''}
     </div>
   }
 }

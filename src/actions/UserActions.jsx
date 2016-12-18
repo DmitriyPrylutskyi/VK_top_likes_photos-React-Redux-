@@ -44,6 +44,7 @@ export function handleLogin(e) {
             type: LOGIN_OUT,
             payload: ''
           })
+          window.location.reload()
         }, 4); // запрос прав на доступ к photo
       }
   }

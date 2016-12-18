@@ -72,7 +72,7 @@ h3 {
     font-size: 16px;
     outline: 0;
     padding: 0 2rem;
-    margin: 0 5px;
+    margin: 5px;
     text-transform: uppercase;
     vertical-align: middle;
     color: #fff;
@@ -86,16 +86,28 @@ h3 {
     background-color: #6d8cb0
 }
 
-.btn-exit {
-    float: right;
+.label {
+    display: inline-block;
+    padding: 0.7rem 0.5rem;
+    margin: 5px;
+    vertical-align: middle;
+    line-height: 1;
+    color: #fff;
+    text-align: center;
+    white-space: nowrap;
+    border-radius: .25em;
+}
+
+.label-success {
+    background-color: #5cb85c;
+}
+
+.label-danger {
+    background-color: #d9534f;
 }
 
 .photo {
     display: inline-block;
     margin: 10px 2px;
     width: 130px;
-}
-
-.error {
-    color: #FF0000;
 }
